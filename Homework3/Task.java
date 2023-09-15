@@ -77,8 +77,8 @@ public class Task {
                 if(gender!='m'&&gender!='f'){
                     throw new RuntimeException("Некорректное значение пола");
                 }
-                fw.write(str);
-                fw.write(System.getProperty("line.separator"));
+                bw.write(str);
+                bw.newLine();
             }
             catch(NumberFormatException e){
                 e.printStackTrace();
